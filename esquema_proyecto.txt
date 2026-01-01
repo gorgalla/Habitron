@@ -1,0 +1,29 @@
+Habitron/
+├── README.md
+├── pyproject.toml / requirements.txt
+├── .gitignore
+├── src/                   # Código backend principal
+│   ├── main.py            # Entry point (FastAPI / Django manage.py)
+│   ├── config/            # Configuración (DB, API keys, settings)
+│   │   └── config.py
+│   ├── models/            # Modelos de DB (SQLAlchemy / Django models)
+│   ├── schemas/           # Pydantic schemas (validación y serialización)
+│   ├── crud/              # Funciones de acceso a datos
+│   ├── api/               # Routers / endpoints
+│   │   ├── fitness.py
+│   │   ├── nutrition.py
+│   │   └── alarm.py
+│   ├── services/          # Lógica de negocio, cálculos de métricas
+│   │   └── muscle_calc.py
+│   └── utils/             # Funciones auxiliares, helpers
+│       ├── logger.py
+│       └── validators.py
+├── tests/                 # Tests unitarios y de integración
+│   ├── test_models.py
+│   └── test_services.py
+├── mobile/                # Código de la app móvil (Flutter / React Native)
+│   ├── lib/               # Flutter: código Dart
+│   └── src/               # React Native: JS/TS
+├── data/                  # Archivos de ejemplo / CSV / seeds
+├── docs/                  # Documentación interna
+└── scripts/               # Scripts auxiliares (DB init, scrapers, etc.)
